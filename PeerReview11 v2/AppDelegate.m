@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ASHandlesMOC.h"
+
 
 @interface AppDelegate ()
 
@@ -17,6 +19,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    id<ASHandlesMOC> child = (id<ASHandlesMOC>)self.window.rootViewController;
+    [child receiveMOC:self.persistentContainer.viewContext];
+    
+    UIUserNotificationSettings* notificationSettings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound categories:nil];
+    
+    [[UIApplication sharedApplication] registerUserNotificationSettings:notificationSettings];
+    
+    [UIApplication sharedApplication].applicationIconBadgeNumber = 1;
+    
     return YES;
 }
 
@@ -58,7 +69,11 @@
     // The persistent container for the application. This implementation creates and returns a container, having loaded the store for the application to it.
     @synchronized (self) {
         if (_persistentContainer == nil) {
-            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"PeerReview11_v2"];
+            if (@available(iOS 10.0, *)) {
+                _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"PeerReview11_v2"];
+            } else {
+                // Fallback on earlier versions
+            }
             [_persistentContainer loadPersistentStoresWithCompletionHandler:^(NSPersistentStoreDescription *storeDescription, NSError *error) {
                 if (error != nil) {
                     // Replace this implementation with code to handle the error appropriately.

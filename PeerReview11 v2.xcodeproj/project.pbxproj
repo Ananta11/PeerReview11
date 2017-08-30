@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C363A351F434AF6000556E6 /* BookEntity+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C363A331F434AF6000556E6 /* BookEntity+CoreDataClass.m */; };
+		8C363A361F434AF6000556E6 /* BookEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C363A341F434AF6000556E6 /* BookEntity+CoreDataProperties.m */; };
 		8C3F69B81F4193E90017D754 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3F69B71F4193E90017D754 /* AppDelegate.m */; };
-		8C3F69BB1F4193E90017D754 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3F69BA1F4193E90017D754 /* ViewController.m */; };
 		8C3F69BE1F4193E90017D754 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C3F69BC1F4193E90017D754 /* Main.storyboard */; };
 		8C3F69C11F4193E90017D754 /* PeerReview11_v2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C3F69BF1F4193E90017D754 /* PeerReview11_v2.xcdatamodeld */; };
 		8C3F69C31F4193E90017D754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C3F69C21F4193E90017D754 /* Assets.xcassets */; };
@@ -16,6 +17,10 @@
 		8C3F69C91F4193E90017D754 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3F69C81F4193E90017D754 /* main.m */; };
 		8C3F69D31F4193E90017D754 /* PeerReview11_v2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3F69D21F4193E90017D754 /* PeerReview11_v2Tests.m */; };
 		8C3F69DE1F4193E90017D754 /* PeerReview11_v2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3F69DD1F4193E90017D754 /* PeerReview11_v2UITests.m */; };
+		8C3F69F31F41EC620017D754 /* MyUINavigatinController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3F69F21F41EC620017D754 /* MyUINavigatinController.m */; };
+		8C3F69F61F41EC880017D754 /* MyUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3F69F51F41EC880017D754 /* MyUITableViewController.m */; };
+		8C3F69F91F41ECB80017D754 /* MyUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3F69F81F41ECB80017D754 /* MyUIViewController.m */; };
+		8C3F69FC1F41ED0D0017D754 /* MyUITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3F69FB1F41ED0D0017D754 /* MyUITableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C363A311F434AF6000556E6 /* BookEntity+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BookEntity+CoreDataProperties.h"; sourceTree = "<group>"; };
+		8C363A321F434AF6000556E6 /* BookEntity+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BookEntity+CoreDataClass.h"; sourceTree = "<group>"; };
+		8C363A331F434AF6000556E6 /* BookEntity+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "BookEntity+CoreDataClass.m"; sourceTree = "<group>"; };
+		8C363A341F434AF6000556E6 /* BookEntity+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "BookEntity+CoreDataProperties.m"; sourceTree = "<group>"; };
 		8C3F69B31F4193E90017D754 /* PeerReview11 v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PeerReview11 v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C3F69B61F4193E90017D754 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8C3F69B71F4193E90017D754 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8C3F69B91F4193E90017D754 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8C3F69BA1F4193E90017D754 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8C3F69BD1F4193E90017D754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C3F69C01F4193E90017D754 /* PeerReview11_v2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PeerReview11_v2.xcdatamodel; sourceTree = "<group>"; };
 		8C3F69C21F4193E90017D754 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +60,16 @@
 		8C3F69D91F4193E90017D754 /* PeerReview11 v2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PeerReview11 v2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C3F69DD1F4193E90017D754 /* PeerReview11_v2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeerReview11_v2UITests.m; sourceTree = "<group>"; };
 		8C3F69DF1F4193E90017D754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C3F69F11F41EC620017D754 /* MyUINavigatinController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyUINavigatinController.h; sourceTree = "<group>"; };
+		8C3F69F21F41EC620017D754 /* MyUINavigatinController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyUINavigatinController.m; sourceTree = "<group>"; };
+		8C3F69F41F41EC880017D754 /* MyUITableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyUITableViewController.h; sourceTree = "<group>"; };
+		8C3F69F51F41EC880017D754 /* MyUITableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyUITableViewController.m; sourceTree = "<group>"; };
+		8C3F69F71F41ECB80017D754 /* MyUIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyUIViewController.h; sourceTree = "<group>"; };
+		8C3F69F81F41ECB80017D754 /* MyUIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyUIViewController.m; sourceTree = "<group>"; };
+		8C3F69FA1F41ED0D0017D754 /* MyUITableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyUITableViewCell.h; sourceTree = "<group>"; };
+		8C3F69FB1F41ED0D0017D754 /* MyUITableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyUITableViewCell.m; sourceTree = "<group>"; };
+		8C3F69FD1F41ED2E0017D754 /* ASHandlesMOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASHandlesMOC.h; sourceTree = "<group>"; };
+		8C3F69FE1F41ED400017D754 /* ASHandleBooks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASHandleBooks.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +100,10 @@
 		8C3F69AA1F4193E90017D754 = {
 			isa = PBXGroup;
 			children = (
+				8C363A311F434AF6000556E6 /* BookEntity+CoreDataProperties.h */,
+				8C363A321F434AF6000556E6 /* BookEntity+CoreDataClass.h */,
+				8C363A331F434AF6000556E6 /* BookEntity+CoreDataClass.m */,
+				8C363A341F434AF6000556E6 /* BookEntity+CoreDataProperties.m */,
 				8C3F69B51F4193E90017D754 /* PeerReview11 v2 */,
 				8C3F69D11F4193E90017D754 /* PeerReview11 v2Tests */,
 				8C3F69DC1F4193E90017D754 /* PeerReview11 v2UITests */,
@@ -105,9 +126,17 @@
 			children = (
 				8C3F69B61F4193E90017D754 /* AppDelegate.h */,
 				8C3F69B71F4193E90017D754 /* AppDelegate.m */,
-				8C3F69B91F4193E90017D754 /* ViewController.h */,
-				8C3F69BA1F4193E90017D754 /* ViewController.m */,
 				8C3F69BC1F4193E90017D754 /* Main.storyboard */,
+				8C3F69F11F41EC620017D754 /* MyUINavigatinController.h */,
+				8C3F69F21F41EC620017D754 /* MyUINavigatinController.m */,
+				8C3F69F41F41EC880017D754 /* MyUITableViewController.h */,
+				8C3F69F51F41EC880017D754 /* MyUITableViewController.m */,
+				8C3F69F71F41ECB80017D754 /* MyUIViewController.h */,
+				8C3F69F81F41ECB80017D754 /* MyUIViewController.m */,
+				8C3F69FA1F41ED0D0017D754 /* MyUITableViewCell.h */,
+				8C3F69FB1F41ED0D0017D754 /* MyUITableViewCell.m */,
+				8C3F69FD1F41ED2E0017D754 /* ASHandlesMOC.h */,
+				8C3F69FE1F41ED400017D754 /* ASHandleBooks.h */,
 				8C3F69C21F4193E90017D754 /* Assets.xcassets */,
 				8C3F69C41F4193E90017D754 /* LaunchScreen.storyboard */,
 				8C3F69C71F4193E90017D754 /* Info.plist */,
@@ -265,9 +294,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C3F69BB1F4193E90017D754 /* ViewController.m in Sources */,
 				8C3F69B81F4193E90017D754 /* AppDelegate.m in Sources */,
+				8C363A351F434AF6000556E6 /* BookEntity+CoreDataClass.m in Sources */,
+				8C3F69FC1F41ED0D0017D754 /* MyUITableViewCell.m in Sources */,
+				8C3F69F91F41ECB80017D754 /* MyUIViewController.m in Sources */,
+				8C3F69F31F41EC620017D754 /* MyUINavigatinController.m in Sources */,
+				8C363A361F434AF6000556E6 /* BookEntity+CoreDataProperties.m in Sources */,
 				8C3F69C91F4193E90017D754 /* main.m in Sources */,
+				8C3F69F61F41EC880017D754 /* MyUITableViewController.m in Sources */,
 				8C3F69C11F4193E90017D754 /* PeerReview11_v2.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,7 +465,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q7KHHPX4EM;
 				INFOPLIST_FILE = "PeerReview11 v2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ananta.PeerReview11-v2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -443,7 +479,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q7KHHPX4EM;
 				INFOPLIST_FILE = "PeerReview11 v2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ananta.PeerReview11-v2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -456,6 +494,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "PeerReview11 v2Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ananta.PeerReview11-v2Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -469,6 +508,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "PeerReview11 v2Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ananta.PeerReview11-v2Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -481,6 +521,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "PeerReview11 v2UITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ananta.PeerReview11-v2UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -493,6 +534,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "PeerReview11 v2UITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ananta.PeerReview11-v2UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -520,6 +562,7 @@
 				8C3F69E41F4193E90017D754 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C3F69E51F4193E90017D754 /* Build configuration list for PBXNativeTarget "PeerReview11 v2Tests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +571,7 @@
 				8C3F69E71F4193E90017D754 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C3F69E81F4193E90017D754 /* Build configuration list for PBXNativeTarget "PeerReview11 v2UITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +580,7 @@
 				8C3F69EA1F4193E90017D754 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
