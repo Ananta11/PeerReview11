@@ -22,9 +22,8 @@
     self.view.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:0.62 alpha:1.0];
     UIImageView *tempImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Grunge-Paper-Texture-1"]];
     [tempImageView setFrame:self.tableView.frame];
-    
+    [self NotificationSquad];
     self.tableView.backgroundView = tempImageView;
-
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -59,21 +58,12 @@
 -(void) controllerDidChangeContent:(NSFetchedResultsController *)controller
 {
     [self.tableView endUpdates];
-    long long number = self.resultsController.sections[0].numberOfObjects;
-    long long total = 0;
-    long long read = 0;
-    for (int i = 0; i < number; i++)
-    {
-        BookEntity *Book = self.resultsController.sections[0].objects[i];
-        total += Book.totalPages;
-        read += Book.pagesRead;
-    }
-    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:total - read];
 }
 
 -(void) controllerWillChangeContent:(NSFetchedResultsController *)controller
 {
     [self.tableView beginUpdates];
+    [self NotificationSquad];
 }
 
 -(void) controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath *)newIndexPath
@@ -161,6 +151,27 @@
     }
 }
 
+-(void) NotificationSquad
+{
+    long long number = self.resultsController.sections[0].numberOfObjects;
+    long long total = 0;
+    long long read = 0;
+    if(number == 0)
+    {
+        [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
+    }
+    else
+    {
+        for (int i = 0; i < number; i++)
+        {
+            BookEntity *Book = self.resultsController.sections[0].objects[i];
+            total += Book.totalPages;
+            read += Book.pagesRead;
+        }
+        [[UIApplication sharedApplication] setApplicationIconBadgeNumber:total-read];
+    }
+    self.FinalCellText.text = [NSString stringWithFormat:@"%lld/%lld pages done. Total Progress %.2f%%", read, total, (float)read/total*100];
+}
 
 -(void) receiveMOC:(NSManagedObjectContext *)managedObjectContext
 {

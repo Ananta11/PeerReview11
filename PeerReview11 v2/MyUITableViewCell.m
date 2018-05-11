@@ -27,7 +27,7 @@
     self.TotalPagesField.text = [NSString stringWithFormat:@"%lld pages left", Book.totalPages-Book.pagesRead];
     self.localBook = Book;
     float prog = (float)self.localBook.pagesRead/self.localBook.totalPages;
-    [self.Progress setProgress:prog];
+    [self.Progress setProgress:prog animated:YES];
 }
 
 

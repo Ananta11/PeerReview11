@@ -30,17 +30,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    NSNotificationCenter *ctr = [NSNotificationCenter defaultCenter];
-    [ctr addObserver:self
-            selector:@selector(keyBoardDidShow:)
-                name:UIKeyboardWillShowNotification
-              object:nil];
-    
-    [ctr addObserver:self
-            selector:@selector(keyBoardDidHide:)
-                name:UIKeyboardWillHideNotification
-              object:nil];
     [self.ProgressBar setProgress:self.progress animated:YES];
     self.Stepper.minimumValue = 0;
     self.Stepper.maximumValue = self.localBook.totalPages;
@@ -123,7 +112,7 @@
     {
         self.navigationItem.title = [NSString stringWithFormat:@"Edit %@",self.localBook.bookName];
         
-        self.progress = (float)self.localBook.pagesRead/self.localBook.totalPages;
+        self.progress = (float)self.Stepper.value/self.localBook.totalPages;
         [self updateProgress];
     }
     self.BookNameField.text = self.localBook.bookName;
@@ -144,8 +133,8 @@
 
 -(void) updateProgress
 {
-    self.CompletionField.text = [NSString stringWithFormat:@"%lld/%lld pages. %.2f%% completed.",self.localBook.pagesRead, self.localBook.totalPages, self.progress*100];
-    self.progress = (float) self.localBook.pagesRead/self.localBook.totalPages;
+    self.progress = (float) self.Stepper.value/self.localBook.totalPages;
+    self.CompletionField.text = [NSString stringWithFormat:@"%ld/%lld pages. %.2f%% completed.",(long)self.Stepper.value, self.localBook.totalPages, self.progress*100];
     [self.ProgressBar setProgress:self.progress animated:YES];
 }
 

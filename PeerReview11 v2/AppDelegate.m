@@ -19,14 +19,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSManagedObjectContext *context = self.persistentContainer.viewContext;
     id<ASHandlesMOC> child = (id<ASHandlesMOC>)self.window.rootViewController;
-    [child receiveMOC:self.persistentContainer.viewContext];
+    [child receiveMOC:context];
     
     UIUserNotificationSettings* notificationSettings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound categories:nil];
     
     [[UIApplication sharedApplication] registerUserNotificationSettings:notificationSettings];
     
-    [UIApplication sharedApplication].applicationIconBadgeNumber = 1;
     
     return YES;
 }

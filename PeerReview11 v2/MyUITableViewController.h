@@ -14,6 +14,7 @@
 #import "MyUITableViewCell.h"
 
 @interface MyUITableViewController : UITableViewController <ASHandlesMOC>
+@property (weak, nonatomic) IBOutlet UILabel *FinalCellText;
 
 -(void) receiveMOC:(NSManagedObjectContext *)managedObjectContext;
 
