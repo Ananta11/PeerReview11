@@ -15,6 +15,7 @@
 
 @interface MyUITableViewController : UITableViewController <ASHandlesMOC>
 @property (weak, nonatomic) IBOutlet UILabel *FinalCellText;
+@property (weak, nonatomic) IBOutlet UIView *FooterView;
 
 -(void) receiveMOC:(NSManagedObjectContext *)managedObjectContext;
 
